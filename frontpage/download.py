@@ -12,6 +12,8 @@ from spacy.language import Language
 from .types import ArxivArticle
 from rich.console import Console 
 
+from .constants import MAX_ARTICLE_AGE_DAYS, SEARCH_QUERY
+
 console = Console()
 
 
@@ -40,7 +42,7 @@ def main():
     nlp = spacy.load("en_core_web_sm", disable=["ner", "lemmatizer", "tagger"])
     console.log(f"Starting arxiv search.")
     items = arxiv.Search(
-        query="and",
+        query=SEARCH_QUERY,
         max_results=200,
         sort_by=arxiv.SortCriterion.SubmittedDate,
     )
@@ -51,7 +53,7 @@ def main():
 
     articles = [dict(parse(r, nlp=nlp)) 
                 for r in tqdm.tqdm(results) 
-                if age_in_days(r) < 2.5 and r.primary_category.startswith("cs")]
+                if age_in_days(r) < MAX_ARTICLE_AGE_DAYS and r.primary_category.startswith("cs")]
 
     dist = [age_in_days(r) for r in results]
     if dist:

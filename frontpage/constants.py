@@ -28,3 +28,5 @@ CONFIG = Config(**srsly.read_yaml(CONFIG_FILE))
 LABELS = [s.label for s in CONFIG.sections]
 THRESHOLDS = {s.label: s.threshold for s in CONFIG.sections}
 SITE_PATH = Path("index.html")
+MAX_ARTICLE_AGE_DAYS = 7.5
+SEARCH_QUERY = "cat:cs.AI AND cat:cs.CV AND cs.LG"
