@@ -58,8 +58,12 @@ def main():
         console.log(f"Minimum article age: {min(dist)}")
         console.log(f"Maximum article age: {max(dist)}")
     articles_dict = {ex['title']: ex for ex in articles}
-    most_recent = list(sorted(Path("data/downloads/").glob("*.jsonl")))[-1]
-    old_articles_dict = {ex['title']: ex for ex in srsly.read_jsonl(most_recent)}
+    data_downloads = list(sorted(Path("data/downloads/").glob("*.jsonl")))
+    if len(data_downloads) > 0:
+        most_recent = srsly.read_jsonl(data_downloads[-1])
+        old_articles_dict = {ex['title']: ex for ex in most_recent}
+    else:
+        old_articles_dict = {}
 
     new_articles = [ex for title, ex in articles_dict.items() if title not in old_articles_dict.keys()]
     old_articles = [ex for title, ex in articles_dict.items() if title in old_articles_dict.keys()]
