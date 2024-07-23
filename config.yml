@@ -1,37 +1,16 @@
 sections:
-  - name: "New Datasets"
+  - name: "Stereo Vision"
     instructions: | 
-      This label represents arxiv articles that discuss the release of a new dataset. 
-      When annotating, it's important that the sentence in question clearly confirms,
-      without a doubt, that the article is about a new dataset or corpus. New benchmarks
-      on a existing dataset are not of interest.
-    label: "new-dataset"
+      This label represents arXiv articles that discuss the release of articles related to stereo vision.
+    label: "stereo-vision"
     threshold: 0.7
-  - name: "Data Quality"
+  - name: "Geospatial Foundation Models"
     instructions: |
-      This label represents arxiv articles that discuss data quality issues in existing 
-      datasets. It may also relate to annotation issues.
-    label: "data-quality"
+      This label represents arXiv articles about geospatial foundation models.
+    label: "geo-fm"
     threshold: 0.6
-  - name: "Benchmarks"
+  - name: "Synthetic satellite data"
     instructions: |
-      This label represents the discussion of a benchmark.
-    label: "benchmark"
-    threshold: 0.6
-  - name: "LLMs"
-    instructions: |
-      This label represents the discussion of a large language models.
-    label: "llms"
-    threshold: 0.6
-  - name: "Developer Research"
-    instructions: |
-      This label represents arxiv articles that discuss research on how to be a developer. 
-      Mainly targeted towards quantitative research.
-    label: "dev-research"
-    threshold: 0.6
-  - name: "Data Annotation Techniques"
-    instructions: |
-      This label represents research related to data annotation. Could be annotator agreement
-      stuff, interfaces, annotations processes ... that stuff!
-    label: "data-annotation"
+      This label represents arXiv articles about Synthetic satellite data.
+    label: "synth-sat"
     threshold: 0.6

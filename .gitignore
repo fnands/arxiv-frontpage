@@ -172,4 +172,6 @@ tmp
 data/annot/active-learn.jsonl
 data/annot/second-opinion.jsonl
 configs/*/*.spacy
-*.ipynb
+*.ipynb# pixi environments
+.pixi
+*.egg-info
