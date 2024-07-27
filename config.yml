@@ -14,3 +14,13 @@ sections:
       This label represents arXiv articles about Synthetic satellite data.
     label: "synth-sat"
     threshold: 0.6
+  - name: "Graph Neural Network"
+    instructions: |
+      This label represents arXiv articles about GNNs.
+    label: "gnn"
+    threshold: 0.6
+  - name: "Geometric Deep Learning"
+    instructions: |
+      This label represents arXiv articles about geometric deep learning.
+    label: "geometric-dl"
+    threshold: 0.6

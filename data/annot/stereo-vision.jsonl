@@ -1,0 +1,21 @@
+{"text":"The proposed IGEV-Stereo builds a combined geometry encoding volume that encodes geometry and context information as well as local matching details, and iteratively indexes it to update the disparity map.","cats":{"stereo-vision":1}}
+{"text":"Inferring 3D scene geometry from captured images is a fundamental task in computer vision and graphics with applications ranging from 3D reconstruction, robotics and autonomous driving.","cats":{"stereo-vision":1}}
+{"text":"Stereo matching which aims to reconstruct dense 3D representations from two images with calibrated cameras is a key technique for reconstructing 3D scene geometry","cats":{"stereo-vision":1}}
+{"text":"However, all-pairs correlations lack non-local geometry knowledge and have difficulties tackling local ambiguities in ill-posed regions.","cats":{"stereo-vision":1}}
+{"text":"In this paper, we propose Iterative Geometry Encoding Volume (IGEV-Stereo), a new deep network architecture for stereo matching","cats":{"stereo-vision":1}}
+{"text":"Additionally, we carry out an exhaustive analysis and deconstruction of recent developments in stereo matching through comprehensive ablative experiments","cats":{"stereo-vision":1}}
+{"text":"Generalization experiments for stereo matching algorithms typically train on the SceneFlow dataset and evaluate on KITTI2012, KITTI2015, ETH3D, and Middlebury","cats":{"stereo-vision":1}}
+{"text":"GwcNet proposes the group-wise correlation volume and ACVNet proposes the attention concatenation volume","cats":{"stereo-vision":1}}
+{"text":"GANet proposes a semi-global aggregation layer and local guided aggregation layer to capture local and the whole-image cost dependencies respectively","cats":{"stereo-vision":1}}
+{"text":"Based on the network pipeline of stereo matching, stereo matching methods can be roughly grouped into two categories, including the encoder-decoder network with 2D convolution (ED-Conv2D) and the cost volume matching with 3D convolution (CVM-Conv3D).","cats":{"stereo-vision":1}}
+{"text":"We introduce a method for novel view synthesis given only a single wide-baseline stereo image pair","cats":{"stereo-vision":1}}
+{"text":"We explore the problem of real-time stereo matching on high-res imagery.","cats":{"stereo-vision":1}}
+{"text":"Because high-res stereo datasets are relatively rare, we introduce a dataset with high-res stereo pairs for both training and evaluation.","cats":{"stereo-vision":1}}
+{"text":"Our approach achieved SOTA performance on Middlebury-v3 and KITTI-15 while running significantly faster than its competitors.","cats":{"stereo-vision":1}}
+{"text":"To tackle this problem, we propose PSMNet, a pyramid stereo matching network consisting of two main modules: spatial pyramid pooling and 3D CNN","cats":{"stereo-vision":1}}
+{"text":"The 3D CNN learns to regularize cost volume using stacked multiple hourglass networks in conjunction with intermediate supervision.","cats":{"stereo-vision":1}}
+{"text":"We propose an end-to-end framework that efficiently searches for correspondences over hierarchies","cats":{"stereo-vision":1}}
+{"text":"Traditional methods take rectified image pairs as input","cats":{"stereo-vision":1}}
+{"text":"As a result, they tend to lose details, blur edges, and produce false matches in textureless areas.","cats":{"stereo-vision":1}}
+{"text":"The SRU module can adaptively fuse hidden disparity information at multiple frequencies for edge and smooth regions.","cats":{"stereo-vision":1}}
+

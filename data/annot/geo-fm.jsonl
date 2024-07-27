@@ -1,0 +1,17 @@
+{"text":"Significant progress in the development of highly adaptable and reusable Artificial Intelligence (AI) models is expected to have a significant impact on Earth science and remote sensing. ","cats":{"geo-fm":1}}
+{"text":"Foundation models are pre-trained on large unlabeled datasets through self-supervision, and then fine-tuned for various downstream tasks with small labeled datasets. ","cats":{"geo-fm":1}}
+{"text":"This paper introduces a first-of-a-kind framework for the efficient pre-training and fine-tuning of foundational models on extensive geospatial data. ","cats":{"geo-fm":1}}
+{"text":"We have utilized this framework to create Prithvi, a transformer-based geospatial foundational model pre-trained on more than 1TB of multispectral satellite imagery from the Harmonized Landsat-Sentinel 2 (HLS) dataset. ","cats":{"geo-fm":1}}
+{"text":"Our study demonstrates the efficacy of our framework in successfully fine-tuning Prithvi to a range of Earth observation tasks that have not been tackled by previous work on foundation models involving multi-temporal cloud gap imputation, flood mapping, wildfire scar segmentation, and multi-temporal crop segmentation. ","cats":{"geo-fm":1}}
+{"text":"In addition, pre-trained Prithvi compares well against the state-of-the-art, e.g., outperforming a conditional GAN model in multi-temporal cloud imputation by up to 5pp (or 5.7%) in the structural similarity index. ","cats":{"geo-fm":1}}
+{"text":"Finally, due to the limited availability of labeled data in the field of Earth observation, we gradually reduce the quantity of available labeled data for refining the model to evaluate data efficiency and demonstrate that data can be decreased significantly without affecting the model's accuracy. ","cats":{"geo-fm":1}}
+{"text":"The pre-trained 100 million parameter model and corresponding fine-tuning workflows have been released publicly as open source contributions to the global Earth sciences community through Hugging Face.","cats":{"geo-fm":1}}
+{"text":"Geospatial technologies are becoming increasingly essential in our world for a wide range of applications, including agriculture, urban planning, and disaster response.","cats":{"geo-fm":1}}
+{"text":"To help improve the applicability and performance of deep learning models on these geospatial tasks, various works have begun investigating foundation models for this domain.","cats":{"geo-fm":1}}
+{"text":"Researchers have explored two prominent approaches for introducing such models in geospatial applications, but both have drawbacks in terms of limited performance benefit or prohibitive training cost.","cats":{"geo-fm":1}}
+{"text":"Therefore, in this work, we propose a novel paradigm for building highly effective geospatial foundation models with minimal resource cost and carbon impact.","cats":{"geo-fm":1}}
+{"text":"We first construct a compact yet diverse dataset from multiple sources to promote feature diversity, which we term GeoPile.","cats":{"geo-fm":1}}
+{"text":"Our approach outperforms previous state-of-the-art geospatial pretraining methods in an extensive evaluation on seven downstream datasets covering various tasks such as change detection, classification, multi-label classification, semantic segmentation, and super-resolution.","cats":{"geo-fm":1}}
+
+
+
