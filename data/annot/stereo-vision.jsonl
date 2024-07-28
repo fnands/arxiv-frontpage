@@ -18,4 +18,18 @@
 {"text":"Traditional methods take rectified image pairs as input","cats":{"stereo-vision":1}}
 {"text":"As a result, they tend to lose details, blur edges, and produce false matches in textureless areas.","cats":{"stereo-vision":1}}
 {"text":"The SRU module can adaptively fuse hidden disparity information at multiple frequencies for edge and smooth regions.","cats":{"stereo-vision":1}}
+{"text": "We present a method that achieves state-of-the-art results for synthesizing novel views of complex scenes by optimizing an underlying continuous volumetric scene function using a sparse set of input views.","cats":{"stereo-vision":0}}
+{"text": "Our algorithm represents a scene using a fully-connected (non-convolutional) deep network, whose input is a single continuous 5D coordinate (spatial location (x,y,z) and viewing direction (θ,ϕ)) and whose output is the volume density and view-dependent emitted radiance at that spatial location.","cats":{"stereo-vision":0}}
+{"text": "We synthesize views by querying 5D coordinates along camera rays and use classic volume rendering techniques to project the output colors and densities into an image.","cats":{"stereo-vision":0}}
+{"text": "Because volume rendering is naturally differentiable, the only input required to optimize our representation is a set of images with known camera poses.","cats":{"stereo-vision":0}}
+{"text": "We describe how to effectively optimize neural radiance fields to render photorealistic novel views of scenes with complicated geometry and appearance, and demonstrate results that outperform prior work on neural rendering and view synthesis.","cats":{"stereo-vision":0}}
+{"text": "View synthesis results are best viewed as videos, so we urge readers to view our supplementary video for convincing comparisons.","cats":{"stereo-vision":0}}
+{"text": "Monocular depth estimation is a fundamental computer vision task.","cats":{"stereo-vision":0}}
+{"text": "Recovering 3D depth from a single image is geometrically ill-posed and requires scene understanding, so it is not surprising that the rise of deep learning has led to a breakthrough.","cats":{"stereo-vision":0}}
+{"text": "The impressive progress of monocular depth estimators has mirrored the growth in model capacity, from relatively modest CNNs to large Transformer architectures.","cats":{"stereo-vision":0}}
+{"text": "Still, monocular depth estimators tend to struggle when presented with images with unfamiliar content and layout, since their knowledge of the visual world is restricted by the data seen during training, and challenged by zero-shot generalization to new domains.","cats":{"stereo-vision":0}}
+{"text": "This motivates us to explore whether the extensive priors captured in recent generative diffusion models can enable better, more generalizable depth estimation.","cats":{"stereo-vision":0}}
+{"text": "We introduce Marigold, a method for affine-invariant monocular depth estimation that is derived from Stable Diffusion and retains its rich prior knowledge.","cats":{"stereo-vision":0}}
+{"text": "The estimator can be fine-tuned in a couple of days on a single GPU using only synthetic training data.","cats":{"stereo-vision":0}}
+{"text": "It delivers state-of-the-art performance across a wide range of datasets, including over 20% performance gains in specific cases.","cats":{"stereo-vision":0}}
 

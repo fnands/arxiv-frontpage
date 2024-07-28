@@ -10,3 +10,17 @@
 {"text": "This complexity is compounded by the difficulties associated with real remote sensing datasets, including limited data acquisition and high annotation costs, which amplifies the need for high-quality synthetic alternatives.","cats":{"synth-sat":1}}
 {"text": "To address this, we present SyntheWorld, a synthetic dataset unparalleled in quality, diversity, and scale.","cats":{"synth-sat":1}}
 {"text": "We conduct experiments on multiple benchmark remote sensing datasets to verify the effectiveness of SyntheWorld and to investigate the conditions under which our synthetic data yield advantages.","cats":{"synth-sat":1}}
+{"text": "Event camera has recently received much attention for low-light image enhancement (LIE) thanks to their distinct advantages, such as high dynamic range.","cats":{"synth-sat":0}}
+{"text": "To this end, we propose a real-world (indoor and outdoor) dataset comprising over 30K pairs of images and events under both low and normal illumination conditions.","cats":{"synth-sat":0}}
+{"text": "To achieve this, we utilize a robotic arm that traces a consistent non-linear trajectory to curate the dataset with spatial alignment precision under 0.03mm.","cats":{"synth-sat":0}}
+{"text": "We then introduce a matching alignment strategy, rendering 90% of our dataset with errors less than 0.01s.","cats":{"synth-sat":0}}
+{"text": "Based on the dataset, we propose a novel event-guided LIE approach, called EvLight, towards robust performance in real-world low-light scenes.","cats":{"synth-sat":0}}
+{"text": "Specifically, we first design the multi-scale holistic fusion branch to extract holistic structural and textural information from both events and images.","cats":{"synth-sat":0}}
+{"text": "To ensure robustness against variations in the regional illumination and noise, we then introduce a Signal-to-Noise-Ratio (SNR)-guided regional feature selection to selectively fuse features of images from regions with high SNR and enhance those with low SNR by extracting regional structure information from events.","cats":{"synth-sat":0}}
+{"text": "We present a new dataset with the goal of advancing the state-of-the-art in object recognition by placing the question of object recognition in the context of the broader question of scene understanding.","cats":{"synth-sat":0}}
+{"text": "This is achieved by gathering images of complex everyday scenes containing common objects in their natural context.","cats":{"synth-sat":0}}
+{"text": "Objects are labeled using per-instance segmentations to aid in precise object localization.","cats":{"synth-sat":0}}
+{"text": "Our dataset contains photos of 91 objects types that would be easily recognizable by a 4 year old.","cats":{"synth-sat":0}}
+{"text": "With a total of 2.5 million labeled instances in 328k images, the creation of our dataset drew upon extensive crowd worker involvement via novel user interfaces for category detection, instance spotting and instance segmentation.","cats":{"synth-sat":0}}
+{"text": "We present a detailed statistical analysis of the dataset in comparison to PASCAL, ImageNet, and SUN.","cats":{"synth-sat":0}}
+{"text": "Finally, we provide baseline performance analysis for bounding box and segmentation detection results using a Deformable Parts Model.","cats":{"synth-sat":0}}

@@ -10,3 +10,11 @@
 {"text": "By stacking layers in which nodes are able to attend over their neighborhoods' features, we enable (implicitly) specifying different weights to different nodes in a neighborhood, without requiring any kind of costly matrix operation (such as inversion) or depending on knowing the graph structure upfront.","cats":{"gnn":1}}
 {"text": "In this way, we address several key challenges of spectral-based graph neural networks simultaneously, and make our model readily applicable to inductive as well as transductive problems.","cats":{"gnn":1}}
 {"text": "Our GAT models have achieved or matched state-of-the-art results across four established transductive and inductive graph benchmarks: the Cora, Citeseer and Pubmed citation network datasets, as well as a protein-protein interaction dataset (wherein test graphs remain unseen during training).","cats":{"gnn":1}}
+{"text": "Convolutional Neural Networks (ConvNets) are commonly developed at a fixed resource budget, and then scaled up for better accuracy if more resources are available.","cats":{"gnn":0}}
+{"text": "In this paper, we systematically study model scaling and identify that carefully balancing network depth, width, and resolution can lead to better performance.","cats":{"gnn":0}}
+{"text": "Based on this observation, we propose a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficient.","cats":{"gnn":0}}
+{"text": "We demonstrate the effectiveness of this method on scaling up MobileNets and ResNet.","cats":{"gnn":0}}
+{"text": "To go even further, we use neural architecture search to design a new baseline network and scale it up to obtain a family of models, called EfficientNets, which achieve much better accuracy and efficiency than previous ConvNets.","cats":{"gnn":0}}
+{"text": "In particular, our EfficientNet-B7 achieves state-of-the-art 84.3% top-1 accuracy on ImageNet, while being 8.4x smaller and 6.1x faster on inference than the best existing ConvNet.","cats":{"gnn":0}}
+{"text": "Our EfficientNets also transfer well and achieve state-of-the-art accuracy on CIFAR-100 (91.7%), Flowers (98.8%), and 3 other transfer learning datasets, with an order of magnitude fewer parameters.","cats":{"gnn":0}}
+{"text": "Source code is at this https URL.","cats":{"gnn":0}}
