@@ -1,3 +1,4 @@
+{"text":"","cats":{"geo-fm":1}}
 {"text":"Significant progress in the development of highly adaptable and reusable Artificial Intelligence (AI) models is expected to have a significant impact on Earth science and remote sensing. ","cats":{"geo-fm":1}}
 {"text":"Foundation models are pre-trained on large unlabeled datasets through self-supervision, and then fine-tuned for various downstream tasks with small labeled datasets. ","cats":{"geo-fm":1}}
 {"text":"This paper introduces a first-of-a-kind framework for the efficient pre-training and fine-tuning of foundational models on extensive geospatial data. ","cats":{"geo-fm":1}}
@@ -12,6 +13,3 @@
 {"text":"Therefore, in this work, we propose a novel paradigm for building highly effective geospatial foundation models with minimal resource cost and carbon impact.","cats":{"geo-fm":1}}
 {"text":"We first construct a compact yet diverse dataset from multiple sources to promote feature diversity, which we term GeoPile.","cats":{"geo-fm":1}}
 {"text":"Our approach outperforms previous state-of-the-art geospatial pretraining methods in an extensive evaluation on seven downstream datasets covering various tasks such as change detection, classification, multi-label classification, semantic segmentation, and super-resolution.","cats":{"geo-fm":1}}
-
-
-
