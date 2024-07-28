@@ -4,7 +4,7 @@ from functools import cached_property
 
 from wasabi import Printer
 import numpy as np
-from skops.io import dump, load
+from skops.io import dump, load, get_untrusted_types
 from embetter.utils import cached
 from sklearn.linear_model import LogisticRegression
 
@@ -117,7 +117,8 @@ class SentenceModel:
             raise RuntimeError("You need to train a model beforehand.")
         models = {}
         for f in Path(path).glob("*.h5"):
-            models[f.stem] = load(f, trusted=True)
+            unknown_types = get_untrusted_types(file=f)
+            models[f.stem] = load(f, trusted=unknown_types)
 
         model = SentenceModel(labels=models.keys())
         model._models = models
